@@ -10,7 +10,7 @@ function Header(props) {
         <div className="w-40 h-40 rounded-full overflow-hidden">
           <Image
             className="rounded-full object-cover"
-            src="/images/profilePicture.jpg"
+            src="/image/upload/v1656437510/portfolio/profilePicture_havjp0.jpg"
             alt="Personal Picture"
             width={40}
             height={40}

@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-}
+  images: {
+    loader: "cloudinary",
+    path: "https://res.cloudinary.com/waytraveltrek/",
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
+

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function Header(props) {
   return (
@@ -22,7 +23,7 @@ function Header(props) {
           className="text-4xl font-semibold tracking-wide text-center lg:text-left">
           <h2 className="font-extrabold">
             <p className={props.darkMode ? "text-white" : "text-black"}>Hi,</p>
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-green-400">
               I am Mauricio Robinson.
             </span>
             <p className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-orange-500">
@@ -35,14 +36,16 @@ function Header(props) {
         <p className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500 font-bold">
           Know more about me
         </p>
-        <span className="cursor-pointer transition duration-700 ease-in-out hover:translate-y-1">
-          <Image
-            src="/v1656440283/portfolio/chevron-down_zioqpw.png"
-            alt="Arrow down"
-            width={20}
-            height={20}
-          />
-        </span>
+        <Link href="AboutMe">
+          <span className="cursor-pointer transition duration-700 ease-in-out hover:translate-y-1">
+            <Image
+              src="/v1656440283/portfolio/chevron-down_zioqpw.png"
+              alt="Arrow down"
+              width={20}
+              height={20}
+            />
+          </span>
+        </Link>
       </div>
     </div>
   );

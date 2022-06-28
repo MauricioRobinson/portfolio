@@ -1,4 +1,4 @@
-import Image from "next/dist/client/image";
+import Image from "next/image";
 
 function Header(props) {
   return (
@@ -10,7 +10,7 @@ function Header(props) {
         <div className="w-40 h-40 rounded-full overflow-hidden">
           <Image
             className="rounded-full object-cover"
-            src="/image/upload/v1656437510/portfolio/profilePicture_havjp0.jpg"
+            src="/v1656437510/portfolio/profilePicture_havjp0.jpg"
             alt="Personal Picture"
             width={40}
             height={40}
@@ -37,7 +37,7 @@ function Header(props) {
         </p>
         <span className="cursor-pointer transition duration-700 ease-in-out hover:translate-y-1">
           <Image
-            src="/images/chevron-down.png"
+            src="/v1656440283/portfolio/chevron-down_zioqpw.png"
             alt="Arrow down"
             width={20}
             height={20}

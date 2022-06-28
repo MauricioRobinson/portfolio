@@ -1,11 +1,11 @@
 function Navbar() {
   return (
     <div>
-      <nav className="h-16 shadow-md flex justify-between items-center px-4">
+      <nav className="h-16 shadow-md flex justify-between items-center px-4 fixed top-0 w-full">
         <div className="font-semibold tracking-wide">
           <h1>Portfolio</h1>
         </div>
-        <div className="flex justify-evenly items-center">
+        <div className="hidden md:flex md:justify-evenly md:items-center">
           <ul className="font-semibold tracking-wide">
             <li className="inline-block mr-4 cursor-pointer">Home</li>
             <li className="inline-block mr-4 cursor-pointer">Contact</li>

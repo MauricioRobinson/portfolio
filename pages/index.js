@@ -1,9 +1,10 @@
 import Head from "next/head";
 import { useState } from "react";
+import About from "./components/About";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 
-export default function Home() {
+export default function Home({ data }) {
   const [darkMode, setDarkMode] = useState(false);
 
   function handleToggleDarkMode() {
@@ -19,8 +20,8 @@ export default function Home() {
       <main>
         <Navbar darkMode={darkMode} toogleDarkMode={handleToggleDarkMode} />
         <Header darkMode={darkMode} />
+        <About data={data} darkMode={darkMode} />
       </main>
     </div>
   );
 }
-

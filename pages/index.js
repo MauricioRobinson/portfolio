@@ -1,8 +1,15 @@
 import Head from "next/head";
+import { useState } from "react";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 
 export default function Home() {
+  const [darkMode, setDarkMode] = useState(false);
+  console.log(darkMode);
+
+  function handleToggleDarkMode() {
+    setDarkMode((prevDarkMode) => !prevDarkMode);
+  }
   return (
     <div>
       <Head>
@@ -11,8 +18,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Navbar />
-        <Header />
+        <Navbar darkMode={darkMode} toogleDarkMode={handleToggleDarkMode} />
+        <Header darkMode={darkMode} />
       </main>
     </div>
   );

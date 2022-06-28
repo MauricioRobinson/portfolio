@@ -1,8 +1,11 @@
 import Image from "next/dist/client/image";
 
-function Header() {
+function Header(props) {
   return (
-    <div className="h-screen flex flex-col justify-between items-center">
+    <div
+      className={`h-screen flex flex-col justify-between items-center ${
+        props.darkMode ? "bg-zinc-900" : ""
+      }`}>
       <div className="flex flex-col h-[70%] lg:h-[60%] lg:flex-row justify-end items-center lg:items-end gap-10">
         <div className="w-40 h-40 rounded-full overflow-hidden">
           <Image
@@ -18,7 +21,7 @@ function Header() {
           id="regard--section"
           className="text-4xl font-semibold tracking-wide text-center lg:text-left">
           <h2 className="font-extrabold">
-            <p className="">Hi,</p>
+            <p className={props.darkMode ? "text-white" : "text-black"}>Hi,</p>
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
               I am Mauricio Robinson.
             </span>
